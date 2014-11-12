@@ -1,4 +1,10 @@
-<h1>Welcome#about</h1>
-<p>Find me in app/views/welcome/about.html.erb</p>
+<h1>Welcome to my boss blog.</h1>
+<p>Perhaps you're curious to learn a little more about me? I'm Lizzy. I'm a Lirbarian at Georgia Tech. I love soccer, radio, music, dogs, and murder mysteries. Also, I'm the boss. </p>
+<br>
+<p>Here are some pictures of me and stuff that I love.</p>
 
-<% provide (:title, "About")%>
+
+
+<% @my_pics.each do |pic| %>
+  <%= image_tag pic, width: "48%", height: "48%"%>
+ <% end %>
