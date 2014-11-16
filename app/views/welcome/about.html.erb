@@ -3,8 +3,19 @@
 <br>
 <p>Here are some pictures of me and stuff that I love.</p>
 
+<div class="image-container">
+	<div class="row" >
+		<div class = "col-md-6">
+  			<%= image_tag "Iceland.jpg", width: "90%", height: "90%", align: "right"%><br>
+  			<%= image_tag "Seth.jpg" , width: "90%", height: "90%", align: "right"%>
+ 		</div>
 
+ 		<div class ="col-md-6">
+ 			<%= image_tag "forest.jpg", width: "90%", height: "9%", align: "left" %><br>
+  			<%= image_tag "librarian.jpg", width: "90%", height: "90%", align: "left" %>
+ 		</div>
+ 	</div>
+ </div>		
 
-<% @my_pics.each do |pic| %>
-  <%= image_tag pic, width: "48%", height: "48%"%>
- <% end %>
+ <br>
+ <br>

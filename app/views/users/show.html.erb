@@ -3,7 +3,14 @@
 <p>
   <strong>Name:</strong>
   <%= @user.name %>
+  <br>
+  <%= image_tag @user.avatar.url(:medium) %>
 </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<br>
+<br>
+<%= link_to 'Edit', edit_user_path, class: "btn btn-primary active" %> | <%= link_to 'Back', users_path, class: "btn btn-primary active" %>
+<br>
+<br>
+
+
